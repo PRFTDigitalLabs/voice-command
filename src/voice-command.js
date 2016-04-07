@@ -148,11 +148,14 @@ $(function() {
     "search for",
     "look up",
     "look for",
+    "search for",
     "search"
   ];
   var final_transcript = '';
   var recognizing = false;
   var cancel = false;
+  
+  worthlessPrefixes.sort(lengthSort).reverse();
 
   if (!('webkitSpeechRecognition' in window)) {
     unsupported();
@@ -268,6 +271,7 @@ $(function() {
     $.each(keywords, function() {
       if ($.isArray(this.keyword)) {
         var self = this;
+        this.keyword.sort(lengthSort).reverse();
         $(this.keyword).each(function() {
           var keyword = this.toLowerCase(),
               keywordIndex = String(string).indexOf(keyword);
@@ -510,3 +514,10 @@ function linebreak(s) {
   var one_line = /\n/g;
   return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
 }
+
+function lengthSort(astr, bstr) {
+ if (astr.length != bstr.length) {
+  return astr.length - bstr.length;
+ }
+ return (astr < bstr) ? -1 : (astr > bstr) ? 1 : 0;
+};

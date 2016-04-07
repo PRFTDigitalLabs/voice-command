@@ -1,0 +1,230 @@
+// ----- Personal preference -----
+*, *:before, *:after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+// ----- Variable Declarations -----
+$inactive: darken(white, 25%);
+$active: #dd0022;
+
+@keyframes spin {
+    from {transform:rotate(-45deg);}
+    to {transform:rotate(360deg);}
+}
+
+// ----- Styles -----
+body, html {
+  background-color: white;
+  color: rgba(black, 0.85);
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.table {
+  display: table;
+  width: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#newPage {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  &.going {
+    opacity: 1;
+    .message {
+      opacity: .5;
+      
+    }
+  }
+  &.loading {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .message {
+    position: absolute;
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin-left: -100px;
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+}
+#results {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+#interim_span {
+  opacity: 0.4;
+}
+#tip {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 250px;
+  opacity: 0.8;
+  color: rgba(black, 0.5);
+  margin-left: -125px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease-out;
+  }
+}
+.visual {
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  margin-bottom: -155px;
+  border-radius: 100%;
+  left: 50%;
+  margin-left: -200px;
+  z-index: 1;
+  transform: scale(0.001);
+  //mix-blend-mode: screen;
+  opacity: 0;
+  transition: all 0.3s;
+  background: rgba(black, 0.1);
+}/*
+#viz1 {
+  background-color: #ff0000;
+}
+#viz2 {
+  background-color: #00ff00;
+}
+#viz3 {
+  background-color: #0000ff;
+}*/
+  #visualization {
+    position: absolute;
+    div {
+      background-color: orange;
+      padding: 10px;
+      margin: 3px;
+      width: 100px;
+      display: inline-block;
+      vertical-algin: bottom;
+    }
+  }
+#button {
+  background-color: $inactive;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  //transition: all 0.1s;
+  z-index: 5;
+  &:active {
+    background-color: $active;
+  }
+  #microphone {
+    fill: #fff;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    top: 20%;
+  }
+  &.cancel {
+    #microphone {
+      fill: transparent;
+    }
+  }
+  &.cancel:before, &.cancel:after{
+    position: absolute;
+    background-color: #fff;
+    width: 2px;
+    height: 16px;
+    display: block;
+    content: '';
+    transform: rotate(45deg);
+    left: 50%;
+    top: 50%;
+    margin-left: -1px;
+    margin-top: -8px;
+    opacity: 0.8;
+    z-index: 15;
+  }
+  &.cancel:after {
+    transform: rotate(-45deg);
+  }
+  .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 3;
+    .slice {
+      background-color: $inactive;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 24px;
+      height: 24px;
+      border-radius: 24px 0 0 0;
+      z-index: 10;
+    }
+  }
+  .loading {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+    border: 2px solid white;
+    border-color: white transparent transparent transparent;
+  }
+  .loading.ring {
+    position: absolute;
+    border: 2px solid rgba(white, 0.4);
+    z-index: 4;
+    transform: rotate(45deg);
+  }
+}
+
+// ----- Mobile styles -----
+@media only screen 
+  and (max-device-width: 736px) { 
+}

@@ -1,3 +1,6 @@
+---
+---
+
 // ----- Personal preference -----
 *, *:before, *:after {
   box-sizing: border-box;
@@ -46,7 +49,7 @@ body {
     opacity: 1;
     .message {
       opacity: .5;
-      
+
     }
   }
   &.loading {
@@ -225,6 +228,6 @@ body {
 }
 
 // ----- Mobile styles -----
-@media only screen 
-  and (max-device-width: 736px) { 
+@media only screen
+  and (max-device-width: 736px) {
 }

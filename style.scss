@@ -21,6 +21,7 @@ body, html {
   background-color: white;
   color: rgba(black, 0.85);
   -webkit-font-smoothing: antialiased;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 body {
   height: 100vh;
@@ -49,7 +50,7 @@ body {
     opacity: 1;
     .message {
       opacity: .5;
-
+      
     }
   }
   &.loading {
@@ -225,9 +226,4 @@ body {
     z-index: 4;
     transform: rotate(45deg);
   }
-}
-
-// ----- Mobile styles -----
-@media only screen
-  and (max-device-width: 736px) {
 }

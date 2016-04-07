@@ -1,8 +1,6 @@
 // ----- On render -----
 $(function() {
   
-  document.title = "New Tab";
-  
   setTimeout(function(){
     $('#newPage').removeClass('loading')
   }, 10);

@@ -17,6 +17,9 @@ $(function() {
     firstHit: 'https://duckduckgo.com/?q=!'
   }*/
   var keywords = [{
+    keyword: ['Go to', 'goto', 'Open'],
+    url: defaultBehavior.firstHit
+  }, {
     keyword: 'Facebook',
     url: 'https://facebook.com/search/?q='
   }, {
@@ -342,26 +345,13 @@ $(function() {
   }
 
   function noKeyword(string) {
-    // "Go to"/"Open" command
-    if (string.indexOf('go to') == 0) {
-      string = string.substring('go to'.length + 1);
-      getThat(defaultBehavior, string.trim(), 'firstHit')
-    } else if (string.indexOf('goto') == 0) {
-      string = string.substring('goto'.length + 1);
-      getThat(defaultBehavior, string.trim(), 'firstHit')
-    } else if (string.indexOf('open') == 0) {
-      string = string.substring('open'.length + 1);
-      openInNewTab(string);
-      getThat(defaultBehavior, string.trim(), 'firstHit')
-    } else {
-      $(worthlessPrefixes).each(function() {
-        if (string.indexOf(this.toLowerCase()) == 0) {
-          string = string.substring(this.length + 1);
-          return false;
-        }
-      });
-      getThat(defaultBehavior, string.trim());
-    }
+    $(worthlessPrefixes).each(function() {
+      if (string.indexOf(this.toLowerCase()) == 0) {
+        string = string.substring(this.length + 1);
+        return false;
+      }
+    });
+    getThat(defaultBehavior, string.trim());
   }
 
   function parseString(string, keyword) {
@@ -413,17 +403,13 @@ $(function() {
       suffix = command.suffix
     }
     if (firstHit) {
-      openInNewTab(defaultBehavior.firstHit + encodeURIComponent(query) + suffix);
+      openIt(defaultBehavior.firstHit + encodeURIComponent(query) + suffix);
     } else {
-      openInNewTab(command.url + encodeURIComponent(query) + suffix);
+      openIt(command.url + encodeURIComponent(query) + suffix);
     }
   }
 
-  function openInNewTab(url) {
-    /*
-    var win = window.open(url, '_blank');
-    win.focus(); */
-    
+  function openIt(url) {
     window.location.href = url;
   }
 

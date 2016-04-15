@@ -1,6 +1,12 @@
 // ----- On render -----
 $(function() {
   
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  
+  if (!isChrome) {
+    unsupported();
+  }
+
   setTimeout(function(){
     $('#newPage').removeClass('loading')
   }, 10);
@@ -16,7 +22,8 @@ $(function() {
     url: 'https://duckduckgo.com/?q=',
     firstHit: 'https://duckduckgo.com/?q=!'
   }*/
-  var keywords = [{
+  var keywords = [
+  {
     keyword: ['Go to', 'goto', 'Open'],
     url: defaultBehavior.firstHit
   }, {
@@ -160,6 +167,8 @@ $(function() {
   
   worthlessPrefixes.sort(lengthSort).reverse();
 
+
+  // Check to see if webkitSpeechRecognition is available
   if (!('webkitSpeechRecognition' in window)) {
     unsupported();
   } else {
@@ -192,6 +201,7 @@ $(function() {
 
   function unsupported() {
     console.log('Webkit speech api not supported in your browser');
+    $('#unsupported').addClass('unsupported');
   }
 
   // Main start event

@@ -76,6 +76,31 @@ body {
     line-height: 1.5em;
   }
 }
+#unsupported {
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  background: white;
+  top: 0;
+  z-index: 999;
+  .table {
+    height: 100vh;
+    .table-cell {
+      padding: 40px;
+      .center {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5em;
+      }
+    }
+  }
+  &.supported {
+    display: none;
+  }
+}
 #results {
   width: 100%;
   padding: 0 20px;

@@ -3,7 +3,7 @@
 
 Voice command uses Google's [Web Speech API](https://developers.google.com/web/updates/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API) to turn speech into text, then uses an easily editable list of keywords to direct the search to the correct page.  Integrating new sites with keywords is simple and takes seconds, with basically no research and very little coding knowledge.
 
-I personally use this as my new tab page.  [Try it out yourself](https://truthlabs.github.io/voice-command/) (Chrome only, requires microphone permissions).
+I personally use a fork of this as my [new tab page](https://s.codepen.io/drewvosburg/debug/rOqdjj).  [Try it out yourself](https://truthlabs.github.io/voice-command/) (Chrome only, requires microphone permissions).
 
 ## Keyword objects
 The code uses and array of keyword objects to search for what the user wants to do. Keyword objects are simple JSON objects with three properties: `keyword`, `url`, and an optional `suffix`.  The average keyword object looks like this: 

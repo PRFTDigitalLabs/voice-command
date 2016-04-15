@@ -2,7 +2,7 @@
 ##### Extensible Chrome voice command tool
 
 
-### [View demo page](https://truthlabs.github.io/voice-command/)
+### <a href="https://truthlabs.github.io/voice-command/: target="_blank">View demo page</a>
 ###### (Chrome only, requires microphone permissions).
 
 

@@ -2,8 +2,8 @@
 ##### Extensible Chrome voice command tool
 
 
-[View demo page](https://truthlabs.github.io/voice-command/)
-######(Chrome only, requires microphone permissions).
+### [View demo page](https://truthlabs.github.io/voice-command/)
+###### (Chrome only, requires microphone permissions).
 
 
 Voice command uses Google's [Web Speech API](https://developers.google.com/web/updates/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API) to turn speech into text, then uses an easily editable list of keywords to direct the search to the correct page.  Integrating new sites with keywords is simple and takes seconds, with basically no research and very little coding knowledge.

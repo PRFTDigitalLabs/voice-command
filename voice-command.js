@@ -328,6 +328,8 @@ $(function() {
     if (firstHit) {
       openIt(defaultBehavior.firstHit + encodeURIComponent(query) + suffix);
     } else {
+      command.url.replace("defaultBehavior.url + ", defaultBehavior.url);
+      command.url.replace("defaultBehavior.firstHit + ", defaultBehavior.firstHit);
       openIt(command.url + encodeURIComponent(query) + suffix);
     }
   }

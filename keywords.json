@@ -357,8 +357,8 @@
       "url": "https:\/\/duckduckgo.com\/?q="
     },
     {
-      "keyword": "Medium",
-      "url": "https:\/\/medium.com\/search?q="
+      "keyword": "Instagram",
+      "url": "defaultBehavior.url + site:Instagram%20"
     }
   ]
 }

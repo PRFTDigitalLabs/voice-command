@@ -361,6 +361,15 @@
       "url": "https:\/\/duckduckgo.com\/?q="
     },
     {
+	  "keyword":[
+	    "start a speed test",
+	    "start speed test",
+	    "speed test",
+	    "my internet speed"
+	  ],
+	  "url":"http:\/\/www.speedtest.net"
+	},
+    {
       "keyword": "Instagram",
       "url": "defaultBehavior.url + site:instagram.com%20"
     },
@@ -414,6 +423,6 @@
 	  	"The Daily Mail"
 	  ],
 	  "url": "defaultBehavior.url + site:github.com+"
-	},
+	}
   ]
 }

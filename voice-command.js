@@ -75,8 +75,10 @@ $(function() {
   // Grab any keyword packs
   $.each(keywordPacks, function(){
     $.getJSON(this, function(data){
+      console.log(data)
       if (data.keywords) {
         keywords.concat(data.keywords);
+        console.log(keywords)
       }
     })
   })

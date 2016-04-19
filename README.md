@@ -56,6 +56,6 @@ For example, say you wanted to see the Twitter accound for Google, but Google is
 
 ## Keyword Packs
 
-I built this to be extensible by "packs," which are JSON files with an object with a "keywords" array of keyword objects. The default included pack is based on the top 100 sites visited from the United States according to [Alexa rankings](http://www.alexa.com/topsites/countries/US). I excluded banks, pornographic sites, and marketing sites.  The one notable absence is Office 365, because I don't have an Office 365 account, but this could easily be added in the future.
+I built this to be extensible by "packs," which are JSON files with an object with a "keywords" array of keyword objects. The default included pack is based on the top 100 sites visited from the United States according to [Alexa rankings](http://www.alexa.com/topsites/countries/US). I excluded banks, pornographic sites, and marketing sites.
 
 The script loops through an array called `keywordPacks`, which is an array of strings that are URLs to the JSON files for each pack. On load, AJAX calls are made and the keywords from each pack are added to the `keywords` array.

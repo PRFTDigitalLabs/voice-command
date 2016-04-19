@@ -376,6 +376,13 @@
 	  ],
 	  "url":"http:\/\/www.speedtest.net"
 	},
+	{
+	  "keyword":[
+	    "an Airbnb in",
+	    "Airbnb"
+	  ],
+	  "url":"https://www.airbnb.com/s/"
+	},
     {
       "keyword": "Instagram",
       "url": "defaultBehavior.url + site:instagram.com%20"

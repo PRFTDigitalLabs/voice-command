@@ -328,9 +328,11 @@ $(function() {
     if (firstHit) {
       openIt(defaultBehavior.firstHit + encodeURIComponent(query) + suffix);
     } else {
+      console.log(command.url)
       command.url.replace("defaultBehavior.url + ", defaultBehavior.url);
       command.url.replace("defaultBehavior.firstHit + ", defaultBehavior.firstHit);
-      openIt(command.url + encodeURIComponent(query) + suffix);
+      console.log(command.url)
+      //openIt(command.url + encodeURIComponent(query) + suffix);
     }
   }
 

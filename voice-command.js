@@ -24,117 +24,21 @@ $(function() {
   }*/
   var keywords = [
   {
-    keyword: ['Go to', 'goto', 'Open'],
-    url: defaultBehavior.firstHit
+    "keyword": ["Stackoverflow", "stack overflow"],
+    "url": defaultBehavior.url + "site:stackoverflow.com+"
   }, {
-    keyword: 'Facebook',
-    url: 'https://facebook.com/search/?q='
+    "keyword": ["weather be like", "weather going to be like", "weather going to be", "weather going to be", "weather like", "weather be", "weather"],
+    "url": defaultBehavior.url + "weather%20"
   }, {
-    keyword: 'YouTube',
-    url: 'https://www.youtube.com/results?search_query='
-  }, {
-    keyword: 'the noun project',
-    url: 'https://thenounproject.com/search/?q='
-  }, {
-    keyword: 'HBO Go',
-    url: 'http://www.hbogo.com/#search&browseMode=browseGrid?searchTerm=',
-    suffix: '/'
-
-  }, {
-    keyword: 'define',
-    url: 'http://dictionary.reference.com/browse/'
-  }, {
-    keyword: 'soundcloud',
-    url: 'https://soundcloud.com/search?q='
-  }, {
-    keyword: 'rdio',
-    url: 'http://www.rdio.com/search/',
-    suffix: '/'
-  }, {
-    keyword: [
-      'watch the show',
-      'watch the tv show',
-      'the show',
-      'the tv show',
-      'tv shows with',
-      'shows with',
-      'tv shows by',
-      'shows by',
-      'television with',
-      'television by',
-      'television'],
-    url: 'https://www.justwatch.com/us/search?content_type=show&q='
-  }, {
-    keyword: [
-      'watch movies with', 
-      'watch movies by',
-      'movies with',
-      'movies by', 
-      'the movie',
-      'movies'
-    ],
-    url: 'https://www.justwatch.com/us/search?q=',
-    suffix: '&content_type=movie'
-    
-  }, {
-    keyword: ['weather be like', 'weather going to be like', 'weather going to be', 'weather going to be', 'weather like', 'weather be', 'weather'],
-    url: defaultBehavior.url + 'weather%20'
-  }, {
-    keyword: ['watch', 'stream', 'where can i watch'],
-    url: 'https://www.justwatch.com/us/search?q='
-  }, {
-    keyword: 'Evernote',
-    url: 'https://www.evernote.com/Home.action?#ses=1&sh=5&sds=3&x=',
-    suffix: '&'
-  }, {
-    keyword: 'Hulu',
-    url: 'http://www.hulu.com/search?q='
-  }, {
-    keyword: 'Netflix',
-    url: 'http://www.netflix.com/search/'
-  }, {
-    keyword: ['Twitter', 'Twitter account', 'Twitter page'],
-    url: 'https://twitter.com/search?src=typd&q='
-  }, {
-    keyword: 'Gmail',
-    url: 'https://mail.google.com/mail/u/0/#search/'
-  }, {
-    keyword: 'Google Keep',
-    url: 'https://keep.google.com/#search/text='
-  }, {
-    keyword: 'Google Photos',
-    url: 'https://photos.google.com/search/'
-  }, {
-    keyword: 'Google Drive',
-    url: 'https://drive.google.com/drive/u/0/search?q='
-  }, {
-    keyword: 'Dropbox',
-    url: 'https://www.dropbox.com/search/personal?query_unnormalized='
-  }, {
-    keyword: 'Google',
-    url: 'https://google.com/search?q='
-  }, {
-    keyword: ['Wikipedia', 'wiki'],
-    url: 'https://en.wikipedia.org/w/index.php?search='
-  }, {
-    keyword: 'Amazon',
-    url: 'http://www.amazon.com/s/?field-keywords='
-  }, {
-    keyword: 'DuckDuckGo',
-    url: 'https://duckduckgo.com/?q='
-  }, {
-    keyword: 'Pinterest',
-    url: 'https://www.pinterest.com/search/?q='
-  }, {
-    keyword: 'ebay',
-    url: 'http://m.ebay.com/sch/i.html?_nkw='
-  }, {
-    keyword: 'imdb',
-    url: 'http://www.imdb.com/find?ref_=nv_sr_fn&s=all&q='
-  }, {
-    keyword: ['Stackoverflow', 'stack overflow'],
-    url: defaultBehavior.url + 'site:stackoverflow.com+'
+    "keyword": ["Go to", "goto", "open"],
+    "url": defaultBehavior.firstHit
   }];
+
+  // You can add keywords in bulk by JSON file here.
+  var keywordPacks = [
+    "./keywords.json"
+  ]
+
   var precursors = [
     'on',
     'on my',
@@ -167,6 +71,14 @@ $(function() {
   
   worthlessPrefixes.sort(lengthSort).reverse();
 
+
+  // Grab any keyword packs
+  $.each(keywordPacks, function())
+  $.getJSON(this, function(data){
+    if (data.keywords) {
+      keywords.concat(data.keywords);
+    }
+  })
 
   // Check to see if webkitSpeechRecognition is available
   if (!('webkitSpeechRecognition' in window)) {

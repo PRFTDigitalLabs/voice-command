@@ -1,0 +1,364 @@
+{
+  "keywords": [
+    {
+      "keyword": "Google",
+      "url": "https:\/\/google.com\/search?q="
+    },
+    {
+      "keyword": [
+        "Facebook",
+        "Facebook page",
+        "Facebook account",
+        "Facebook profile"
+      ],
+      "url": "https:\/\/facebook.com\/search\/?q="
+    },
+    {
+      "keyword": "YouTube",
+      "url": "https:\/\/www.youtube.com\/results?search_query="
+    },
+    {
+      "keyword": "Amazon",
+      "url": "http:\/\/www.amazon.com\/s\/?field-keywords="
+    },
+    {
+      "keyword": "Yahoo",
+      "url": "https:\/\/search.yahoo.com\/search?p="
+    },
+    {
+      "keyword": [
+        "Wikipedia",
+        "wiki"
+      ],
+      "url": "https:\/\/en.wikipedia.org\/w\/index.php?search="
+    },
+    {
+      "keyword": "ebay",
+      "url": "http:\/\/m.ebay.com\/sch\/i.html?_nkw="
+    },
+    {
+      "keyword": [
+        "Twitter",
+        "Twitter account",
+        "Twitter page",
+        "Tweets by",
+        "Twitter profile"
+      ],
+      "url": "https:\/\/twitter.com\/search?src=typd&q="
+    },
+    {
+      "keyword": "Reddit",
+      "url": "https:\/\/www.reddit.com\/search?q="
+    },
+    {
+      "keyword": "Netflix",
+      "url": "http:\/\/www.netflix.com\/search\/"
+    },
+    {
+      "keyword": "Linkedin",
+      "url": "https:\/\/www.linkedin.com\/vsearch\/f?type=all&keywords="
+    },
+    {
+      "keyword": "Pinterest",
+      "url": "https:\/\/www.pinterest.com\/search\/?q="
+    },
+    {
+      "keyword": "Craigslist",
+      "url": "https:\/\/craigslist.org\/search\/sss?sort=rel&query="
+    },
+    {
+      "keyword": [
+        "go.com",
+        "Disney go"
+      ],
+      "url": "http:\/\/search.disney.com\/search?q="
+    },
+    {
+      "keyword": "Imgur",
+      "url": "http:\/\/imgur.com\/search?q="
+    },
+    {
+      "keyword": "Bing",
+      "url": "https:\/\/www.bing.com\/search?q="
+    },
+    {
+      "keyword": "Tumblr",
+      "url": "https:\/\/www.tumblr.com\/search\/"
+    },
+    {
+      "keyword": "ESPN",
+      "url": "http:\/\/espn.go.com\/search\/results?q="
+    },
+    {
+      "keyword": "CNN",
+      "url": "http:\/\/www.cnn.com\/search\/?text="
+    },
+    {
+      "keyword": "Diply",
+      "url": "http:\/\/diply.com\/search?q="
+    },
+    {
+      "keyword": [
+        "New York Times",
+        "The New York Times",
+        "The NY Times",
+        "nytimes.com",
+        "nytimes"
+      ],
+      "url": "http:\/\/query.nytimes.com\/search\/sitesearch\/#\/"
+    },
+    {
+      "keyword": [
+        "MSN",
+        "Msn.com"
+      ],
+      "url": "http:\/\/diply.com\/search?q="
+    },
+    {
+      "keyword": "imdb",
+      "url": "http:\/\/www.imdb.com\/find?ref_=nv_sr_fn&s=all&q="
+    },
+    {
+      "keyword": "Walmart",
+      "url": "http:\/\/www.walmart.com\/search\/?query="
+    },
+    {
+      "keyword": "Apple",
+      "url": "http:\/\/www.apple.com\/us\/search\/"
+    },
+    {
+      "keyword": "Yelp",
+      "url": "http:\/\/www.yelp.com\/search?find_desc="
+    },
+    {
+      "keyword": "OneDrive",
+      "url": "https:\/\/onedrive.live.com\/?qt=search&q="
+    },
+    {
+      "keyword": "Etsy",
+      "url": "https:\/\/www.etsy.com\/search?q="
+    },
+    {
+      "keyword": "Target",
+      "url": "http:\/\/www.target.com\/s?searchTerm="
+    },
+    {
+      "keyword": "Aol",
+      "url": "http:\/\/search.aol.com\/aol\/search?q="
+    },
+    {
+      "keyword": "Buzzfeed",
+      "url": "http:\/\/www.buzzfeed.com\/search?q="
+    },
+    {
+      "keyword": "Home Depot",
+      "url": "http:\/\/www.homedepot.com\/s\/"
+    },
+    {
+      "keyword": [
+        "The Washington Post",
+        "Washington Post",
+        "Washpo"
+      ],
+      "url": "https:\/\/www.washingtonpost.com\/newssearch\/?query="
+    },
+    {
+      "keyword": "Fox News",
+      "url": "http:\/\/www.foxnews.com\/search-results\/search?q="
+    },
+    {
+      "keyword": "Hulu",
+      "url": "http:\/\/www.hulu.com\/search?q="
+    },
+    {
+      "keyword": "Indeed.com",
+      "url": "http:\/\/www.indeed.com\/jobs?q="
+    },
+    {
+      "keyword": "Dropbox",
+      "url": "https:\/\/www.dropbox.com\/search\/personal?query_unnormalized="
+    },
+    {
+      "keyword": "TripAdvisor",
+      "url": "https:\/\/www.tripadvisor.com\/Search?q="
+    },
+    {
+      "keyword": "Best Buy",
+      "url": "http:\/\/www.bestbuy.com\/site\/searchpage.jsp?id=pcat17071&st="
+    },
+    {
+      "keyword": "Groupon",
+      "url": "https:\/\/www.groupon.com\/browse\/?query="
+    },
+    {
+      "keyword": [
+        "Gfycat",
+        "Gfy cat"
+      ],
+      "url": "http:\/\/gfycat.com\/search\/"
+    },
+    {
+      "keyword": "Slickdeals",
+      "url": "http:\/\/slickdeals.net\/newsearch.php?q="
+    },
+    {
+      "keyword": "Salesforce",
+      "url": "http:\/\/www.salesforce.com\/site-search.jsp?q="
+    },
+    {
+      "keyword": "Forbes",
+      "url": "http:\/\/www.forbes.com\/search\/?q="
+    },
+    {
+      "keyword": "USA Today",
+      "url": "http:\/\/www.usatoday.com\/search\/",
+      "suffix": "\/"
+    },
+    {
+      "keyword": "Adobe",
+      "url": "http:\/\/www.adobe.com\/cfusion\/search\/index.cfm?term="
+    },
+    {
+      "keyword": "Lowe's",
+      "url": "http:\/\/www.lowes.com\/Search=?catalogId=10051&newSearch=true&Ntt="
+    },
+    {
+      "keyword": "IRS.gov",
+      "url": "https:\/\/search.irs.gov\/search?q="
+    },
+    {
+      "keyword": "vice",
+      "url": "http:\/\/www.vice.com\/search?query="
+    },
+    {
+      "keyword": "CNet",
+      "url": "http:\/\/www.cnet.com\/search\/?query="
+    },
+    {
+      "keyword": "Twtich.tv",
+      "url": "https:\/\/www.twitch.tv\/search?query="
+    },
+    {
+      "keyword": "Macy's",
+      "url": "http:\/\/www1.macys.com\/shop\/search?keyword="
+    },
+    {
+      "keyword": "Ask.com",
+      "url": "http:\/\/www.ask.com\/web?q="
+    },
+    {
+      "keyword": "About.com",
+      "url": "http:\/\/index.about.com\/index?q="
+    },
+    {
+      "keyword": "MLB.com",
+      "url": "http:\/\/mlb.mlb.com\/search\/?query="
+    },
+    {
+      "keyword": [
+        "National Institutes of Health",
+        "Nih.gov",
+        "NIH"
+      ],
+      "url": "https:\/\/search.nih.gov\/search?affiliate=nih&query="
+    },
+    {
+      "keyword": [
+        "CBS Sports",
+        "CBS sports.com"
+      ],
+      "url": "http:\/\/www.cbssports.com\/info\/search#q="
+    },
+    {
+      "keyword": "Business Insider",
+      "url": "http:\/\/www.businessinsider.com\/s?q="
+    },
+    {
+      "keyword": "Kohl's",
+      "url": "http:\/\/www.kohls.com\/search.jsp?search="
+    },
+    {
+      "keyword": "the noun project",
+      "url": "https:\/\/thenounproject.com\/search\/?q="
+    },
+    {
+      "keyword": "HBO Go",
+      "url": "http:\/\/www.hbogo.com\/#search&browseMode=browseGrid?searchTerm=",
+      "suffix": "\/"
+    },
+    {
+      "keyword": "define",
+      "url": "http:\/\/dictionary.reference.com\/browse\/"
+    },
+    {
+      "keyword": "soundcloud",
+      "url": "https:\/\/soundcloud.com\/search?q="
+    },
+    {
+      "keyword": [
+        "watch the show",
+        "watch the tv show",
+        "the show",
+        "the tv show",
+        "tv shows with",
+        "shows with",
+        "tv shows by",
+        "shows by",
+        "television with",
+        "television by",
+        "television",
+        "watch movies by",
+        "movies with",
+        "movies by",
+        "the movie",
+        "watch the movie",
+        "movies",
+        "watch",
+        "stream",
+        "where can i watch"
+      ],
+      "url": "https:\/\/www.justwatch.com\/us\/search?q="
+    },
+    {
+      "keyword": "Evernote",
+      "url": "https:\/\/www.evernote.com\/Home.action?#ses=1&sh=5&sds=3&x=",
+      "suffix": "&"
+    },
+    {
+      "keyword": "Hulu",
+      "url": "http:\/\/www.hulu.com\/search?q="
+    },
+    {
+      "keyword": [
+        "Twitter",
+        "Twitter account",
+        "Twitter page"
+      ],
+      "url": "https:\/\/twitter.com\/search?src=typd&q="
+    },
+    {
+      "keyword": "Gmail",
+      "url": "https:\/\/mail.google.com\/mail\/u\/0\/#search\/"
+    },
+    {
+      "keyword": "Google Keep",
+      "url": "https:\/\/keep.google.com\/#search\/text="
+    },
+    {
+      "keyword": "Google Photos",
+      "url": "https:\/\/photos.google.com\/search\/"
+    },
+    {
+      "keyword": "Google Drive",
+      "url": "https:\/\/drive.google.com\/drive\/u\/0\/search?q="
+    },
+    {
+      "keyword": "DuckDuckGo",
+      "url": "https:\/\/duckduckgo.com\/?q="
+    },
+    {
+      "keyword": "Medium",
+      "url": "https:\/\/medium.com\/search?q="
+    }
+  ]
+}

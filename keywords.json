@@ -358,7 +358,7 @@
     },
     {
       "keyword": "Instagram",
-      "url": "defaultBehavior.url + site:Instagram%20"
+      "url": "defaultBehavior.url + site:Instagram.com%20"
     }
   ]
 }

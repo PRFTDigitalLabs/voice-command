@@ -353,6 +353,10 @@
       "url": "https:\/\/drive.google.com\/drive\/u\/0\/search?q="
     },
     {
+      "keyword": "Google Maps",
+      "url": "https:\/\/maps.google.com\/maps?q="
+    },
+    {
       "keyword": "DuckDuckGo",
       "url": "https:\/\/duckduckgo.com\/?q="
     },

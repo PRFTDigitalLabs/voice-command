@@ -2,9 +2,10 @@
 ##### Extensible Chrome voice command tool
 
 
-### <a href="https://truthlabs.github.io/voice-command/" target="_blank">View demo page</a>
+### [View demo page](https://truthlabs.github.io/voice-command/)
 ###### (Chrome only, requires microphone permissions).
 
+---
 
 Voice command uses Google's [Web Speech API](https://developers.google.com/web/updates/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API) to turn speech into text, then uses an easily editable list of keywords to direct the search to the correct page.  Integrating new sites with keywords is simple and takes seconds, with basically no research and very little coding knowledge.
 
@@ -28,23 +29,30 @@ The purpose of the `url` parameter is to provide a URL with the parameter name f
 For some reason, some sites insist on having certain characters or parameters at the end of the URL to work properly.  For this reason, there is an optional `suffix` parameter.  If this is required, often it is a `/` or `&` character.
 
 ## Language parsing
-I wrote the string parsing myself.  The parsing happens in two main steps
+I wrote the string parsing myself.  Conceptually, I'm splitting the string up like so:
+
+![Prefix for human context, query string, precursor, keyword](./example.png)
+
+The two main pieces that I'm looking for are the query string (what you're searching for) and the keyword (where you're searching).
+
+#### Query string
+The brunt of the spoken phrase or sentence is likely to be the query string. This is the word or phrase that you want to find
 
 #### Worthless prefixes
 Imperative English sentences often begin with words that provide context to English speakers that the sentence is a command.  Usually this includes a verb.  I have created an array of common phrases that I have used to make commands that provide the script with no helpful information about context.  These are stripped out of the user's spoken sentence if they appear at the beginning.
 
 These are stored in an array of strings called `worthlessPrefixes`, which can easily be modified.
 
-#### Keyword detection
-Next in the process, the script goes through the keywords array and searches for each of the listed keyword strings in each keyword object.  If it finds one, it makes a note of it and stores it in an array called `foundKeywords`.
+#### Keyword
+The keyword helps me look up the corresponding keyword object to know what URL to send the query string to.
 
-If no keywords are found, then the default behavior is passed the query string.
+#### Precursor
+The precursor is an optional piece that serves two functions. First, it helps users switch their sentences around syntactically, getting the same results for "Google Elon Musk" as "Elon Musk on Google." Secondly, it can serve as a tiebreaker in instances where there is more than one keyword.
 
-If one keyword is found, then its URL is passed the query string.
+For example, say you wanted to see the Twitter accound for Google, but Google is a keyword. You can say "Google on Twitter," and the precursor "on" helps understand that we should be searching the next keyword, which is Twitter.  Without a precursor, I assume that the first keyword is the one we are searching, e.g. "Google Twitter."
 
-If more than one is found, then the algorithm tries to find a precursor, which is found in the `precursors` array. if a keyword occurs after a precursor, then the query string is passed to that keyword's URL. Otherwise, it is passed to the first keyword to appear in the user's spoken sentence.
+## Keyword Packs
 
-## Design Considerations
-One key choice was to make the user hold the microphone button to begin recording and release when they are complete. This eliminate false stopping due to "stagefright." If the user can't think of what to say or pauses when they aren't complete, the script will wait until the user is done and releases the button.
+I built this to be extensible by "packs," which are JSON files with an object with a "keywords" array of keyword objects. The default included pack is based on the top 100 sites visited from the United States according to [Alexa rankings](http://www.alexa.com/topsites/countries/US). I excluded banks, pornographic sites, and marketing sites.  The one notable absence is Office 365, because I don't have an Office 365 account, but this could easily be added in the future.
 
-There is also a two second delay where the microphone icon turns to a cancel icon, which gives the user a chance to review the transcribed sentence and stop it from going down the wrong path based on a misheard word.
+The script loops through an array called `keywordPacks`, which is an array of strings that are URLs to the JSON files for each pack. On load, AJAX calls are made and the keywords from each pack are added to the `keywords` array.

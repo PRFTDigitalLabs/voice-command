@@ -22,16 +22,12 @@ $(function() {
     url: 'https://duckduckgo.com/?q=',
     firstHit: 'https://duckduckgo.com/?q=!'
   }*/
-  var keywords = [
-  {
-    "keyword": ["Stackoverflow", "stack overflow"],
-    "url": defaultBehavior.url + "site:stackoverflow.com+"
-  }, {
+  var keywords = [{
     "keyword": ["weather be like", "weather going to be like", "weather going to be", "weather going to be", "weather like", "weather be", "weather"],
-    "url": defaultBehavior.url + "weather%20"
+    "url": "defaultBehavior.url + weather%20"
   }, {
     "keyword": ["Go to", "goto", "open"],
-    "url": defaultBehavior.firstHit
+    "url": "defaultBehavior.firstHit"
   }];
 
   // You can add keywords in bulk by JSON file here.
@@ -298,7 +294,6 @@ $(function() {
       getThat(newKeyword, '');
     } else {
       // There is a string here, so query it
-      console.log(keyword)
       $(precursors).each(function() {
         var onKeyword = String(this) + ' ' + keyword.foundKeyword.toLowerCase();
         if (string.indexOf(onKeyword) > -1 && string.indexOf(onKeyword) == string.length - onKeyword.length) {
@@ -328,11 +323,11 @@ $(function() {
     if (firstHit) {
       openIt(defaultBehavior.firstHit + encodeURIComponent(query) + suffix);
     } else {
-      console.log(command.url)
       command.url = command.url.replace("defaultBehavior.url + ", defaultBehavior.url)
-        .replace("defaultBehavior.firstHit + ", defaultBehavior.firstHit);
-      console.log(command.url)
-      //openIt(command.url + encodeURIComponent(query) + suffix);
+        .replace("defaultBehavior.firstHit + ", defaultBehavior.firstHit)
+        .replace("defaultBehavior.url", defaultBehavior.url)
+        .replace("defaultBehavior.firstHit", defaultBehavior.firstHit);
+      openIt(command.url + encodeURIComponent(query) + suffix);
     }
   }
 

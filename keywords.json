@@ -358,7 +358,58 @@
     },
     {
       "keyword": "Instagram",
-      "url": "defaultBehavior.url + site:Instagram.com%20"
-    }
+      "url": "defaultBehavior.url + site:instagram.com%20"
+    },
+	{
+	  "keyword": ["Stackoverflow", "stack overflow"],
+	  "url": "defaultBehavior.url + site:stackoverflow.com+"
+	},
+	{
+	  "keyword": "Weather.com",
+	  "url": "defaultBehavior.url + site:weather.com+"
+	},
+	{
+	  "keyword": "Blogspot",
+	  "url": "defaultBehavior.url + site:blogspot.com+"
+	},
+	{
+	  "keyword": [
+	  	"Huffington Post",
+	  	"The Huffington Post",
+	  	"Huffpo"
+	  ],
+	  "url": "defaultBehavior.url + site:huffingtonpost.com+"
+	},
+	{
+	  "keyword": "Wordpress",
+	  "url": "defaultBehavior.url + site:wordpress.com+"
+	},
+	{
+	  "keyword": "Pandora",
+	  "url": "defaultBehavior.url + site:pandora.com+"
+	},
+	{
+	  "keyword": "GitHub",
+	  "url": "defaultBehavior.url + site:github.com+"
+	},
+	{
+	  "keyword": "Realtor.com",
+	  "url": "defaultBehavior.url + site:realtor.com+"
+	},
+	{
+	  "keyword": "Zillow",
+	  "url": "defaultBehavior.url + site:zillow.com+"
+	},
+	{
+	  "keyword": "Wikia",
+	  "url": "defaultBehavior.url + site:wikia.com+"
+	},
+	{
+	  "keyword": [
+	  	"Daily Mail",
+	  	"The Daily Mail"
+	  ],
+	  "url": "defaultBehavior.url + site:github.com+"
+	},
   ]
 }

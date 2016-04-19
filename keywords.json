@@ -357,6 +357,13 @@
       "url": "https:\/\/maps.google.com\/maps?q="
     },
     {
+      "keyword": [
+      	"Navigate to",
+      	"Drive to"
+      ],
+      "url": "https:\/\/maps.google.com\/maps/dir//"
+    },
+    {
       "keyword": "DuckDuckGo",
       "url": "https:\/\/duckduckgo.com\/?q="
     },

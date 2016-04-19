@@ -23,7 +23,15 @@ $(function() {
     firstHit: 'https://duckduckgo.com/?q=!'
   }*/
   var keywords = [{
-    "keyword": ["weather be like", "weather going to be like", "weather going to be", "weather going to be", "weather like", "weather be", "weather"],
+    "keyword":[
+      "weather be like",
+      "weather going to be like",
+      "weather going to be",
+      "weather going to be",
+      "weather like",
+      "weather be",
+      "weather"
+    ],
     "url": "defaultBehavior.url + weather%20"
   }, {
     "keyword": ["Go to", "goto", "open"],

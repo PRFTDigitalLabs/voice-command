@@ -329,8 +329,8 @@ $(function() {
       openIt(defaultBehavior.firstHit + encodeURIComponent(query) + suffix);
     } else {
       console.log(command.url)
-      command.url.replace("defaultBehavior.url + ", defaultBehavior.url);
-      command.url.replace("defaultBehavior.firstHit + ", defaultBehavior.firstHit);
+      command.url = command.url.replace("defaultBehavior.url + ", defaultBehavior.url)
+        .replace("defaultBehavior.firstHit + ", defaultBehavior.firstHit);
       console.log(command.url)
       //openIt(command.url + encodeURIComponent(query) + suffix);
     }

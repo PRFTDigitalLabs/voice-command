@@ -73,11 +73,12 @@ $(function() {
 
 
   // Grab any keyword packs
-  $.each(keywordPacks, function())
-  $.getJSON(this, function(data){
-    if (data.keywords) {
-      keywords.concat(data.keywords);
-    }
+  $.each(keywordPacks, function(){
+    $.getJSON(this, function(data){
+      if (data.keywords) {
+        keywords.concat(data.keywords);
+      }
+    })
   })
 
   // Check to see if webkitSpeechRecognition is available

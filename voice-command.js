@@ -28,6 +28,10 @@ $(function() {
   }, {
     "keyword": ["Go to", "goto", "open"],
     "url": "defaultBehavior.firstHit"
+  }, {
+    keyword: 'my iphone',
+    url: 'https://www.icloud.com/#find',
+    command: true
   }];
 
   // You can add keywords in bulk by JSON file here.
@@ -284,13 +288,20 @@ $(function() {
     });
     if (string.trim() == String(keyword.foundKeyword).toLowerCase()) {
         // There is no string here, so go to the root domain
-      var pathArray = keyword.url.split('/'),
-        protocol = pathArray[0],
-        host = pathArray[2],
-        url = protocol + '//' + host;
-      newKeyword = {
-        url: url
-      };
+      if (!keyword.command) {
+        var pathArray = keyword.url.split('/'),
+          protocol = pathArray[0],
+          host = pathArray[2],
+          url = protocol + '//' + host;
+        newKeyword = {
+          url: url
+        };
+      }
+      else {
+        newKeyword = {
+          url: keyword.url
+        }
+      }
       getThat(newKeyword, '');
     } else {
       // There is a string here, so query it

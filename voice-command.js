@@ -66,6 +66,8 @@ $(function() {
     "show",
     "i want to",
     "give me",
+    "help me find",
+    "help me",
     "let me",
     "search for",
     "look up",

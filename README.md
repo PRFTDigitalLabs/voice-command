@@ -28,6 +28,9 @@ The purpose of the `url` parameter is to provide a URL with the parameter name f
 #### Suffix
 For some reason, some sites insist on having certain characters or parameters at the end of the URL to work properly.  For this reason, there is an optional `suffix` parameter.  If this is required, often it is a `/` or `&` character.
 
+#### Bonus: Command
+I only have used this once, but it's working around other behavior of the script.  If you say a keyword with no query string, like "Facebook," then it goes to the base URL of the URL found in that keyword object. For something like "Find my iPhone" where the base URL doesn't take you directly to the content, I had to create an exception.  This means that if you're going to a keyword with `"command":true`, it won't go to the base URL, but to the full URL.  Edge case, but it might be helpful.
+
 ## Language parsing
 I wrote the string parsing myself.  Conceptually, I'm splitting the string up like so:
 

@@ -29,9 +29,9 @@ $(function() {
     "keyword": ["Go to", "goto", "open"],
     "url": "defaultBehavior.firstHit"
   }, {
-    keyword: 'my iphone',
-    url: 'https://www.icloud.com/#find',
-    command: true
+    "keyword":"my iphone",
+    "url":"https:\/\/www.icloud.com\/#find",
+    "command":true
   }];
 
   // You can add keywords in bulk by JSON file here.

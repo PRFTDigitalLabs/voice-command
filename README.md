@@ -60,7 +60,7 @@ I built this to be extensible by "packs," which are JSON files with an object wi
 
 The script loops through an array called `keywordPacks`, which is an array of strings that are URLs to the JSON files for each pack. On load, AJAX calls are made and the keywords from each pack are added to the `keywords` array.
 
-#### Default pack
+#### Supported services
 
 I made a default set of keywords to support the top 100 sites visited from the US according to Alexa rankings. I excluded banks, marketing sites, and pornographic sites, and included additional services that I find useful. The following is a list of the 88 services available in the default pack:
 

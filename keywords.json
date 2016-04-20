@@ -1,10 +1,6 @@
 {
   "keywords": [
     {
-      "keyword": "Google",
-      "url": "https:\/\/google.com\/search?q="
-    },
-    {
       "keyword": [
         "Facebook",
         "Facebook page",
@@ -453,6 +449,10 @@
 	  "keyword": "Wikia",
 	  "url": "defaultBehavior.url + site:wikia.com+"
 	},
+    {
+      "keyword": "Google",
+      "url": "https:\/\/google.com\/search?q="
+    },
 	{
 	  "keyword": [
       "The Daily Mail",

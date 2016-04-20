@@ -77,7 +77,8 @@ $(function() {
     "i need",
     "i need to",
     "i need to get",
-    "i need to have"
+    "i need to have",
+    "play"
   ];
   var final_transcript = '';
   var recognizing = false;

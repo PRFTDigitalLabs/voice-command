@@ -369,7 +369,9 @@
       	"Navigate to",
       	"Drive to",
         "Drive",
-        "Directions to"
+        "Navigate",
+        "Directions to",
+        "Directions"
       ],
       "url": "https:\/\/maps.google.com\/maps/dir//"
     },

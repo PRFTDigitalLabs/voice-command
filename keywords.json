@@ -367,7 +367,9 @@
     {
       "keyword": [
       	"Navigate to",
-      	"Drive to"
+      	"Drive to",
+        "Drive",
+        "Directions to"
       ],
       "url": "https:\/\/maps.google.com\/maps/dir//"
     },

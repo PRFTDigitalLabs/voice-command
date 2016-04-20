@@ -62,12 +62,13 @@ The script loops through an array called `keywordPacks`, which is an array of st
 
 #### Supported services
 
-I made a default set of keywords to support the top 100 sites visited from the US according to Alexa rankings. I excluded banks, marketing sites, and pornographic sites, and included additional services that I find useful. The following is a list of the 88 services available in the default pack:
+I made a default set of keywords to support the top 100 sites visited from the US according to Alexa rankings. I excluded banks, marketing sites, and pornographic sites, and included additional services that I find useful. The following is a list of the 89 services available in the default pack:
 
 - Google
 - Facebook
 - YouTube
 - Amazon
+- Find my iPhone
 - Yahoo
 - Wikipedia
 - eBay

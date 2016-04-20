@@ -33,7 +33,7 @@
       "url": "https:\/\/en.wikipedia.org\/w\/index.php?search="
     },
     {
-      "keyword": "ebay",
+      "keyword": "eBay",
       "url": "http:\/\/m.ebay.com\/sch\/i.html?_nkw="
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "keyword": [
-        "go.com",
+        "Go.com",
         "Disney go"
       ],
       "url": "http:\/\/search.disney.com\/search?q="
@@ -115,7 +115,7 @@
       "url": "http:\/\/diply.com\/search?q="
     },
     {
-      "keyword": "imdb",
+      "keyword": "IMDb",
       "url": "http:\/\/www.imdb.com\/find?ref_=nv_sr_fn&s=all&q="
     },
     {
@@ -231,7 +231,7 @@
       "url": "https:\/\/search.irs.gov\/search?q="
     },
     {
-      "keyword": "vice",
+      "keyword": "Vice",
       "url": "http:\/\/www.vice.com\/search?query="
     },
     {
@@ -282,7 +282,7 @@
       "url": "http:\/\/www.kohls.com\/search.jsp?search="
     },
     {
-      "keyword": "the noun project",
+      "keyword": "The Noun Project",
       "url": "https:\/\/thenounproject.com\/search\/?q="
     },
     {
@@ -291,15 +291,19 @@
       "suffix": "\/"
     },
     {
-      "keyword": "define",
+      "keyword": [
+        "Dictionary.com",
+        "define"
+      ],
       "url": "http:\/\/dictionary.reference.com\/browse\/"
     },
     {
-      "keyword": "soundcloud",
+      "keyword": "Soundcloud",
       "url": "https:\/\/soundcloud.com\/search?q="
     },
     {
       "keyword": [
+        "JustWatch",
         "watch the show",
         "watch the tv show",
         "the show",
@@ -373,6 +377,8 @@
     },
     {
 	  "keyword":[
+      "Speedtest.net",
+      "speed test.net"
 	    "start a speed test",
 	    "start speed test",
 	    "speed test",
@@ -382,8 +388,8 @@
 	},
 	{
 	  "keyword":[
+      "Airbnb",
 	    "an Airbnb in",
-	    "Airbnb",
 	    "Airbnb in",
 	    "an Air b&b in",
 	    "Air b&b",
@@ -401,7 +407,7 @@
 	},
 	{
 	  "keyword": "Weather.com",
-	  "url": "defaultBehavior.url + site:weather.com+"
+	  "url": "defaultBehavior.firstHit + site:weather.com+"
 	},
 	{
 	  "keyword": "Blogspot",
@@ -419,10 +425,14 @@
 	  "keyword": "Wordpress",
 	  "url": "defaultBehavior.url + site:wordpress.com+"
 	},
-	{
-	  "keyword": "Pandora",
-	  "url": "defaultBehavior.url + site:pandora.com+"
-	},
+  {
+    "keyword": "Pandora",
+    "url": "defaultBehavior.firstHit + site:pandora.com+"
+  },
+  {
+    "keyword": "Spotify",
+    "url": "defaultBehavior.firstHit + site:spotify.com+"
+  },
 	{
 	  "keyword": "GitHub",
 	  "url": "defaultBehavior.url + site:github.com+"
@@ -441,8 +451,8 @@
 	},
 	{
 	  "keyword": [
-	  	"Daily Mail",
-	  	"The Daily Mail"
+      "The Daily Mail",
+	  	"Daily Mail"
 	  ],
 	  "url": "defaultBehavior.url + site:github.com+"
 	}

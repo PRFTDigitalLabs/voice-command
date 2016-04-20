@@ -73,20 +73,25 @@ $(function() {
     "look up",
     "look for",
     "search for",
-    "search"
+    "search",
+    "i need",
+    "i need to",
+    "i need to get",
+    "i need to have"
   ];
   var final_transcript = '';
   var recognizing = false;
   var cancel = false;
   
   worthlessPrefixes.sort(lengthSort).reverse();
+  precursors.sort(lengthSort).reverse();
 
 
   // Grab any keyword packs
   $.each(keywordPacks, function(){
     $.getJSON(this, function(data){
       if (data.keywords) {
-        keywords = keywords.concat(data.keywords);
+        keywords = data.keywords.concat(keywords);
       }
     })
   })

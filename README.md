@@ -59,3 +59,97 @@ For example, say you wanted to see the Twitter accound for Google, but Google is
 I built this to be extensible by "packs," which are JSON files with an object with a "keywords" array of keyword objects. The default included pack is based on the top 100 sites visited from the United States according to [Alexa rankings](http://www.alexa.com/topsites/countries/US). I excluded banks, pornographic sites, and marketing sites.
 
 The script loops through an array called `keywordPacks`, which is an array of strings that are URLs to the JSON files for each pack. On load, AJAX calls are made and the keywords from each pack are added to the `keywords` array.
+
+#### Default pack
+
+I made a default set of keywords to support the top 100 sites visited from the US according to Alexa rankings. I excluded banks, marketing sites, and pornographic sites, and included additional services that I find useful. The following is a list of the 88 services available in the default pack:
+
+- Google
+- Facebook
+- YouTube
+- Amazon
+- Yahoo
+- Wikipedia
+- eBay
+- Twitter
+- Reddit
+- Netflix
+- HBO Go
+- Soundcloud
+- JustWatch
+- Evernote
+- Hulu
+- Twitter
+- Gmail
+- Google Keep
+- Google Photos
+- Google Drive
+- Google Maps
+- Hulu
+- Dropbox
+- Speedtest.net
+- Airbnb
+- Instagram
+- Pandora
+- Spotify
+- The Noun Project
+- GitHub
+- Stackoverflow
+- Linkedin
+- Pinterest
+- Craigslist
+- DuckDuckGo
+- Imgur
+- Go.com
+- Bing
+- Tumblr
+- ESPN
+- CNN
+- Diply
+- New York Times
+- MSN
+- IMDb
+- Walmart
+- Apple
+- Yelp
+- OneDrive
+- Outlook
+- Etsy
+- Target
+- Aol
+- Buzzfeed
+- Home Depot
+- The Washington Post
+- Fox News
+- Indeed.com
+- TripAdvisor
+- Best Buy
+- Groupon
+- Gfycat
+- Slickdeals
+- Salesforce
+- Forbes
+- USA Today
+- Adobe
+- Lowe's
+- IRS.gov
+- Vice
+- CNet
+- Twtich.tv
+- Macy's
+- Ask.com
+- About.com
+- MLB.com
+- National Institutes of Health
+- CBS Sports
+- Business Insider
+- Kohl's
+- Dictionary.com
+- Weather.com
+- Blogspot
+- Huffington Post
+- Wordpress
+- Realtor.com
+- Zillow
+- Wikia
+- The Daily Mail

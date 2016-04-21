@@ -87,6 +87,7 @@ $(function() {
     "are",
     "does",
     "do they sell",
+    "do they have",
     "can I buy",
     "can I get"
   ];

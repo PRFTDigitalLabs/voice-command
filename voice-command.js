@@ -55,7 +55,10 @@ $(function() {
     'from',
     'from my',
     "'",
-    "'s"
+    "'s",
+    "at",
+    "sell",
+    "have"
   ];
   var worthlessPrefixes = [
     "what's the",
@@ -79,7 +82,13 @@ $(function() {
     "i need to",
     "i need to get",
     "i need to have",
-    "play"
+    "play",
+    "is",
+    "are",
+    "does",
+    "do they sell",
+    "can I buy",
+    "can I get"
   ];
   var final_transcript = '';
   var recognizing = false;

@@ -14,8 +14,8 @@ $(function() {
   var tip;
   
   var defaultBehavior = {
-    url: 'https://www.google.com/search?q=',
-    firstHit: 'https://www.google.com/search?btnI&q='
+    url: 'https://www.bing.com/search?q=',
+    firstHit: 'https://www.bing.com/search?btnI&q='
   };
   // You can easily switch from Google to other default search engines here
   /*defaultBehavior = {
